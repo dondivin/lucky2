@@ -1,0 +1,1195 @@
+                @font-face {
+  font-family: "poppin";
+  src: url('Poppins/Poppins-Light.ttf')  format('truetype');
+}
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: "poppin";
+        }
+
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff3c00;
+}
+
+form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.game .menu{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    background-color: #ff3c00;
+    box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.226);
+}
+.game .menu .title{
+    width: 200px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.game .menu .title img{
+    width: 100%;
+    height: 100%;
+    background-color: aliceblue;
+}
+.game .menu .subMenu{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.game .menu .subMenu a{
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 100;
+    color: aliceblue;
+    padding: 20px;
+    transition: 0.4s;
+}
+.game .menu .subMenu a:hover{
+    box-shadow: 0px 1px 10px 0px RGBA(0,0,0,0.53);
+    border-radius: 10px;
+    transition: 0.4s;
+}
+.game .more .icon{
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    background-color: #ff3c00;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.288);
+   position: relative;
+}
+
+
+
+@keyframes up {
+    0%{
+       bottom: -100%;
+       
+    }
+    100%{
+        bottom: 0;
+    }
+}
+@keyframes down {
+    0%{
+       bottom: 0%;
+
+    }
+    100%{
+        bottom: -100%;
+    }
+}
+
+
+.game .more .icon .byone div{
+    width: 100%;
+    height: 70px;
+    position: relative;
+}
+.game .more .icon .byone div p{
+ 
+}
+.game .more .icon .byone div a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.game .more #moreIcon{
+    width: 70%;
+    height: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+}
+.game .more .icon .byone{
+    display: none;
+}
+@keyframes spin {
+   
+    100%{
+         transform: translate(-50%,-50%) rotate(360deg);
+    }
+}
+@keyframes spin1 {
+   
+    0%{
+         transform: translate(-50%,-50%) rotate(360deg);
+    }
+}
+@media only screen and (min-width:600px){
+
+    .game{
+        width: 1000px;
+        height: 100%;
+        box-shadow: 0px 1px 10px 0px RGBA(0,0,0,0.13);
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 10% 90%;
+        overflow: auto;
+        position: relative;
+    }
+    .game .more{
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        bottom: 10%;
+        right: 0;
+        z-index: 11;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .game .more .icon .byone div a img{
+        width: 70%;
+    }
+    .game .more .icon .byone div a p{
+        position: absolute;
+        left: -150%;
+        padding: 10px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        box-shadow: 0px 2px 1px #0000003b;
+        align-items: center;
+        width: 100px;
+        font-weight: bolder;
+        color: aliceblue;
+        font-size: 100%;
+        background-color: #ff3c00;
+    }
+    .game .more .icon .byone{
+        width: 188px;
+        height: 200px;
+      
+        /* gap: 20px; */
+        position: absolute;
+        bottom: 100%;
+        right: 0;
+        overflow: hidden;
+      
+    }
+    .game .more .icon .byone .div{
+        width: 75px;
+        height: 100%;
+        display: none;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+    }
+    .game .menu .user{
+        width: 400px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    } 
+    .game .all .lucky #title .amount{
+        width: 200px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .game .all .lucky #title .amount div{
+        width: 70px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+        .game .all .lucky{
+            width: 100%;
+            height: 100%;
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 100px 500px 200px 250px 200px;
+            overflow: auto;
+        }
+        .game .all .lucky #title .titl{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #5d6165;
+        }
+        .game .all .lucky .refer .input{
+            padding: 20px;
+            width: 300px;
+            height: 50px;
+        }
+        .game .all .lucky .refer{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .game .all .lucky .refer .link{
+            width: 100%;
+            height: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+        .game .all .lucky .refer .referal{
+            width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        gap: 10%;
+       
+        }
+        .game .all .lucky .refer .referal .referalCode{
+          
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+        }
+        .game .all .lucky .refer .referal .referalCode h1:nth-child(2){
+          
+            padding: 10px;
+            color: #0000008a;
+            border-radius: 10px;
+           
+        }
+        .game .all .lucky .refer .referal .referalPerson{
+           
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            flex-direction: column;
+        }
+        .game .all .lucky .refer .referal .referalPerson h1:nth-child(2){
+            
+            padding: 10px 30px;
+            color: #0000008a;
+        }
+      
+        .game .all  .footer .social .plate .channel .foot{
+            display: flex;
+            align-items: end;
+            font-size: 25px;
+            font-weight: bolder;
+            margin-left: 20px;
+            color: aliceblue;
+        }
+        .game .all  .footer .menu1 .foot{
+            display: flex;
+            align-items: end;
+            font-size: 25px;
+            font-weight: bolder;
+            margin-left: 20px;
+            color: aliceblue;
+        }
+}
+.game .menu .user h1{
+    font-size: 20px;
+}
+.game .menu .user div{
+    width: 76px;
+    height: 76px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: aliceblue;
+
+}
+.game .menu .user div img{
+    width: 70%;
+    height: 70%;
+}
+.game .all{
+    width: 100%;
+height: 100%;
+display: grid;
+grid-template-columns: 100%;
+grid-template-rows: 100%;
+background-color: aliceblue;
+
+}
+
+.game .all .lucky #title{
+width: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+font-weight: 100;
+position: relative;
+}
+.game .all .lucky #title #titl{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #5d6165;
+}
+
+.game .all .lucky #title .amount h1{
+    font-family: "poppinBold";
+    color: #727477;
+}
+
+.game .all .lucky .price{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.game .all .lucky .price img{
+    height: 100%;
+}
+.game .all .lucky .point{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.game .all .lucky .point .num #luckyNum1{
+    display: none;
+}
+.game .all .lucky .point .num h1{ 
+    color: #ff3c00;
+    font-family: "poppinBold";
+}
+.game .all .lucky .point .trigger #btn{
+    width: 300px;
+    height: 50px;
+    background-color: #ff3c00;
+    color: aliceblue;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+.game .all .lucky .point .trigger h1{
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    color: #ff3c00;
+    font-family: "poppinBold";
+   
+}
+.game .all .lucky .point .trigger #btn div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+}
+.game .all .lucky .point .trigger #btn div img{
+    width: 50px;
+   
+}
+.game .all .lucky .point .trigger #btn:hover{
+    background-color: #ff3c00;
+    transition: 0.4s;
+    box-shadow: 0px 1px 10px 0px RGBA(0,0,0,0.53);
+}
+.game .all .lucky .note{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  
+}
+
+.game .all .lucky .note .note1{
+    width: 90%;
+    height: 70px;
+    display: flex;
+    gap: 20px;
+background-color: #bec3c7;
+border-radius: 15px;
+}
+
+.game .all .lucky .note .txt{
+    display: flex;
+    width: 90%;
+    height: 100%;
+   display: flex;
+   justify-content: center;
+    flex-direction: column;
+}
+
+.game .all .lucky .note .txt p{
+    gap: 20px;
+    font-size: 20px;
+}
+
+
+
+.game .all  .footer{
+    width: 100%;
+    height: 100%;
+    background-color: #ff3c00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.game .all  .footer .right{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.game .all  .footer .right p{
+    color: aliceblue;
+}
+.game .all  .footer .menu1{
+    width: 50%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto 60%;
+ 
+}
+
+.game .all  .footer .menu1 .list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 11;
+}
+.game .all  .footer .menu1 .list a{
+    width: 80%;
+    color: #252727;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 900;
+}
+.game .all  .footer .menu1 .list a:hover{
+    color: aliceblue;
+}
+
+.game .all  .footer .social{
+    width: 100%;
+    height: 100%;
+}
+
+.game .all  .footer .social .plate{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   width: 100%;
+}
+
+.game .all  .footer .social .plate .channel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+width: 100%;
+height: 70px;
+}
+
+.game .all  .footer .social .plate .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.game .all  .footer .social .plate .logo a{
+    width: 50px;
+    transition: 0.4s;
+}
+.game .all  .footer .social .plate .logo a p{
+    width: 80px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: black;
+    color: aliceblue;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.game .all  .footer .social .plate .logo a:hover{
+    transition: 0.4s;
+    transform: scale(1.2);
+
+}
+.game .all  .footer .social .plate .logo a:hover > p{
+    visibility: visible;
+}
+.game .all  .footer .social .plate .logo a img{
+    width: 100%;
+}
+
+
+
+
+
+/*------------------withdraw-------------*/
+.game .all .lucky .withdraw{
+    width: 100%;
+    height: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100%;
+}
+.game .all .lucky .withdraw .withdrawInput{
+    width: 100%;
+    height: 100%;
+    display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+gap: 30px;
+}
+.game .all .lucky .withdraw .withdrawInput .error{
+    width: 60%;
+    height: 50%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: -40%;
+}
+.game .all .lucky .withdraw .withdrawInput .error #redErr{
+    width: 17px;
+    height: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: red;
+    color: aliceblue;
+    font-size: smaller;
+}
+.game .all .lucky .withdraw .withdrawInput .error p{
+    font-size: small;
+    color: red;
+    font-weight: bolder;
+}
+.game .all .lucky .withdraw .withdrawInput .input,.button{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    gap: 20px;
+}
+.game .all .lucky .withdraw .withdrawInput .input input{
+    width: 60%;
+    height: 50px;
+    border-radius: 10px;
+    text-align: center;
+    border: 2px solid rgb(116, 112, 112);
+    outline-color: #ff3c00;
+    font-size: larger;
+    font-family: monospace;
+    font-weight: 900;
+    box-shadow: 0 0 7px rgba(17, 17, 17, 0.163);
+}
+.game .all .lucky .withdraw .withdrawInput .input .usdt{
+    width: 60%;
+    height: 50px;
+    display: flex;
+    gap: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.game .all .lucky .withdraw .withdrawInput .input .usdt h1{
+    font-size: larger;
+}
+.game .all .lucky .withdraw .withdrawInput .input .usdt input{
+    width: 70%;
+    height: 40px;
+    border-radius: 10px;
+    text-align: center;
+    border: 2px solid rgb(116, 112, 112);
+    outline-color: #ff3c00;
+    font-size: larger;
+    font-family: monospace;
+    font-weight: 900;
+    box-shadow: 0 0 7px rgb(17 17 17 / 9%);
+}
+.game .all .lucky .withdraw .withdrawInput .button{
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.game .all .lucky .withdraw .withdrawInput .button button{
+    width: 70%;
+    height: 50px;
+    background-color: #ff3c00;
+    border-radius: 10px;
+    border: none;
+    color: aliceblue;
+    font-weight: bolder;
+    box-shadow: 0 0 7px rgb(141, 141, 141);
+    transition: 0.4s;
+}
+.game .all .lucky .withdraw .withdrawInput .button button:hover{
+    transition: 0.4s;
+    transform: scale(1.04);
+}
+.game .all .lucky .withdraw .history{
+    width: 90%;
+    height: 95%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 90%;
+    border: 1px solid rgba(0, 0, 0, 0.247);
+    border-radius: 5px;
+}
+.game .all .lucky .withdraw .history h1{
+    font-size: 20px;
+    color: #727477;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.253);
+}
+.game .all .lucky .withdraw .history .list{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 15% 85%;
+}
+.game .all .lucky .withdraw .history .list .title{
+    width: 100%;
+    height: 100%;
+    display: grid;
+
+    grid-template-columns: 20% 20% 30% 30%;
+    grid-template-rows: 100%;
+}
+.game .all .lucky .withdraw .history .list .title h1{
+    font-size: 17px;
+}
+.game .all .lucky .withdraw .history .list .titList{
+    width: 100%;
+    height: 100%;
+    display: flex;
+   flex-direction: column;
+   overflow: auto;
+   gap: 1px;
+}
+.game .all .lucky .withdraw .history .list .titList .withd{
+width: 100%;
+height: 50px;
+display: grid;
+grid-template-columns: 20% 20% 30% 30%;
+grid-template-rows: 50px;
+box-shadow: 0 0 1px black;
+}
+.game .all .lucky .withdraw .history .list .titList .withd p{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.game .all .lucky .withdraw .history .list .titList .withd #stat{
+    color: orangered;
+    font-weight: bolder;
+}
+
+.game .all .lucky .refer .input input{
+    width: 100%;
+    height: 100%;
+    font-family: monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 4px 3px 8px rgba(66, 66, 66, 0.295);
+    border-radius: 10px;
+    font-size: 17px;
+    border: none;
+    text-align: center;
+}
+.game .all .lucky .refer .copy img{
+    width: 40px;
+}
+.game .all .lucky .refer .copy:hover{
+    transform: scale(1.1);
+    transition: 0.2s;
+ 
+}
+.game .all .lucky .refer .copy:hover > p{
+    visibility: visible;
+    transition: 0.4s;
+}
+.game .all .lucky .refer .copy{
+    transition: 0.4s;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.game .all .lucky .refer .copy p{
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    transition: 0.4s;
+}
+.game .all .lucky .refer .txt{
+    color: #404347;
+}
+
+
+@media only screen and (max-width:600px){
+    .game{
+        width: 100%;
+        height: 100%;
+        box-shadow: 0px 1px 10px 0px RGBA(0,0,0,0.13);
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 10% 90%;
+        overflow: auto;
+        position: relative;
+    }
+    .game .more{
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        bottom: 10%;
+        right: 0;
+        z-index: 11;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .game .more .icon .byone div a img{
+        width: 90%;
+    }
+    .game .more .icon .byone div a p{
+        position: absolute;
+        left: -150%;
+        padding: 10px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        box-shadow: 0px 2px 1px #0000003b;
+        align-items: center;
+        font-weight: bolder;
+        color: aliceblue;
+        font-size: 70%;
+        background-color: #ff3c00;
+    }
+    .game .more .icon .byone{
+        width: 140px;
+        height: 200px;
+      
+        /* gap: 20px; */
+        position: absolute;
+        bottom: 100%;
+        right: 0;
+        overflow: hidden;
+      
+    }
+    .game .more .icon .byone .div{
+        width: 50px;
+        height: 100%;
+        display: none;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+    }
+    .game .menu .user {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+        /* gap: 30px; */
+    }
+
+    .game .menu .user h1 {
+        font-size: 10px;
+    }
+    .game .menu .user div {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background-color: aliceblue;
+    }
+    .game .menu .subMenu a {
+        font-size: 14px;
+        text-decoration: none;
+        font-weight: 100;
+        color: aliceblue;
+        padding: 10px;
+        transition: 0.4s;
+    }
+    .game .menu .title {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .game .all .lucky #title .titl {
+        width: 100%;
+        height: 100%;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        color: #5d6165;
+        font-size: 20px;
+    }
+    .amount {
+        width: 200px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* gap: 10px; */
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .amount h1 {
+        font-family: "poppinBold";
+        color: #727477;
+        font-size: 25px;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+    .amount div {
+        width: 50px;
+        height: 100%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .game .all .lucky .price img {
+        height: 90%;
+        width: 90%;
+        object-fit: contain;
+    }
+    .game .all .lucky .note .txt p {
+        gap: 10px;
+        font-size: small;
+    }
+    .game .all .lucky {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 70px 400px 200px 250px 200px;
+        overflow: auto;
+    }
+    .game .all .footer {
+        width: 100%;
+        height: 100%;
+        background-color: #ff3c00;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+    }
+    .game .all .footer .menu1 {
+        width: 50%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto 70%;
+    }
+    .game .all  .footer .social .plate .channel .foot{
+        display: flex;
+        align-items: end;
+        font-size: 17px;
+        font-weight: bolder;
+        margin-left: 20px;
+        color: aliceblue;
+    }
+    .game .all  .footer .menu1 .foot{
+        display: flex;
+        align-items: end;
+        font-size: 22px;
+        font-weight: bolder;
+        margin-left: 10px;
+        color: aliceblue;
+    }
+    .game .all .footer .menu1 .list a {
+        width: 80%;
+        color: #151a1a;
+        text-decoration: none;
+        font-size: 17px;
+        font-weight: 900;
+    }
+    .game .all .footer .social .plate .logo a {
+        width: 30px;
+        transition: 0.4s;
+    }
+    .game .all .lucky .note .note1 {
+        width: 90%;
+        height: 50px;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        background-color: #bec3c7;
+        border-radius: 15px;
+    }
+    .game .all .lucky .note .note1 h1{
+        font-size: 20px;
+    }
+    .game .all .lucky .point .trigger #btn {
+        width: 200px;
+        height: 50px;
+        background-color: #ff3c00;
+        color: aliceblue;
+        border: none;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.4s;
+    }
+
+    /*-------------withdrawing-----------------*/
+
+    .game .all .lucky .withdraw {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.game .all .lucky .withdraw .history {
+    width: 100%;
+    height: 95%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 90%;
+    border: 1px solid rgba(0, 0, 0, 0.247);
+    border-radius: 5px;
+}
+.game .all .lucky .withdraw .withdrawInput .input input {
+    width: 60%;
+    height: 40px;
+    border-radius: 10px;
+    text-align: center;
+    border: 2px solid rgb(116, 112, 112);
+    outline-color: #ff3c00;
+    font-size: 100%;
+    font-family: monospace;
+    font-weight: 900;
+    box-shadow: 0 0 7px rgba(17, 17, 17, 0.163);
+}
+.game .all .lucky .withdraw .withdrawInput .button button {
+    width: 50%;
+    height: 40px;
+    background-color: #ff3c00;
+    border-radius: 10px;
+    border: none;
+    color: aliceblue;
+    font-weight: bolder;
+    box-shadow: 0 0 7px rgb(141, 141, 141);
+    transition: 0.4s;
+}  
+.game .all .lucky #title #titl {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    color: #5d6165;
+    font-size: 20px;
+}
+.game .all .lucky #title .amount h1 {
+    font-family: "poppinBold";
+    color: #727477;
+    font-size: 17px;
+}
+
+/*------------------refer----------*/
+
+.game .all .lucky .refer .txt {
+    color: #404347;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.game .all .lucky .refer .txt h1{
+    font-size: 14px;
+}
+.game .all .lucky .refer .input {
+    /* padding: 20px; */
+    width: 100%;
+    height: 50px;
+}
+
+
+.game .all .lucky .refer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.game .all .lucky .refer .link{
+    width: 100%;
+    height: 50%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    /* gap: 20px; */
+    grid-template-columns: 30% 50% 20%;
+}
+.game .all .lucky .refer .referal{
+    width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 10%;
+
+}
+.game .all .lucky .refer .referal h1{
+    font-size: large;
+}
+.game .all .lucky .refer .referal .referalCode{
+ 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.game .all .lucky .refer .referal .referalCode h1:nth-child(2){
+   
+    padding: 10px;
+    border-radius: 10px;
+}
+.game .all .lucky .refer .referal .referalPerson{
+   
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-direction: column;
+}
+.game .all .lucky .refer .referal .referalPerson h1:nth-child(2){
+ 
+    padding: 5px 30px;
+    border-radius: 10px;
+}
+
+.game .all .lucky .refer .copy p {
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    transition: 0.4s;
+    position: absolute;
+    bottom: -50%;
+}
+.game .all .lucky .refer .input input {
+    width: 100%;
+    height: 100%;
+    font-family: monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 4px 3px 8px rgba(66, 66, 66, 0.295);
+    border-radius: 10px;
+    font-size: 15px;
+    border: none;
+    text-align: center;
+}
+
+}
+
+@keyframes appear {
+    0%{
+        transform: scale(0);
+        left: 0;
+    }
+    100%{
+        transform: scale(1);
+        left: -150%;
+    }
+}
+@keyframes disappear {
+    0%{
+        transform: scale(1);
+        left: -150%;
+    }
+    100%{
+        transform: scale(0);
+         left: 0;
+    }
+}

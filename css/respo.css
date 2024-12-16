@@ -1,0 +1,139 @@
+/*-----------------claim----------------*/
+
+
+@media only screen and (min-width:400px){
+    .claim{
+        width: 400px;
+        height: auto;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 30% auto 30%;
+        background-color: aliceblue;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.226);
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .claim .bottom a{
+        width: 50px;
+        height: 50px;
+        font-family: "poppinBold";
+        border: 7px solid #ff3c00;
+        color: #ff3c00;
+        font-size: 20px;
+        font-weight: bolder;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px;
+        text-decoration: none;
+        transition: 0.4s;
+    
+    }
+    .claim .txt p {
+        font-size: 17px;
+        color: #ff3c00;
+        font-weight: bolder;
+        width: 80%;
+    }
+    .claim .txt h1{
+        font-size: 20px;
+        font-weight: bolder;
+        color: #ff3c00;
+        font-family: "poppinBold";
+        width: 70%;
+        text-align: center;
+    }
+}
+.claim .logo{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.claim .logo img{
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+}
+.claim .txt {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.claim .txt #won{
+    font-size: 20px;
+    width: 70%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.claim .bottom {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.claim .bottom a:hover{
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+
+@media only screen and (max-width:400px) {
+    .claim {
+        width: 90%;
+        height: auto;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 30% auto 30%;
+        background-color: aliceblue;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.226);
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .claim .bottom a{
+        width: 40px;
+        height: 40px;
+        font-family: "poppinBold";
+        border: 7px solid #ff3c00;
+        color: #ff3c00;
+        font-size: 17px;
+        font-weight: bolder;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px;
+        text-decoration: none;
+        transition: 0.4s;
+    
+    }
+    .claim .txt p {
+        font-size: 15px;
+        color: #ff3c00;
+        font-weight: bolder;
+        width: 80%;
+    }
+    .claim .txt h1{
+        font-size: 15px;
+        font-weight: bolder;
+        color: #ff3c00;
+        font-family: "poppinBold";
+        width: 70%;
+        text-align: center;
+    }
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let date = new Date(1704293941220);
+    let hours = date.setHours(date.getHours()+1);
+    let minTest = date.getMinutes();
+
+
+let date1 = new Date(),
+    curHours = date1.setHours(date1.getHours()),
+    curMin = date1.getMinutes();
+
+
+
+    console.log('Heure '+minTest+' et '+curMin);
+    console.log('int '+curHours);
+let min = 1704289640780 -  1704278972319;
+console.log('le rest est '+min);
+
+
+let minRest;
+
+if(hours > curHours){
+
+    if(minTest > curMin){
+        minRest = minTest - curMin;
+      
+        console.log('minute reste > '+minRest); 
+    }else if(minTest <= curMin){
+        minRest = (minTest+60)-curMin;
+        console.log('minute reste < '+minRest); 
+    }
+  
+}else{
+    console.log('timeout');
+}
+
+
+
+
+
+
+   
+console.log('hours '+hourRest);
+    let time = 1704278110032;
+    let mydate = new Date(time);
+    console.log(mydate.toUTCString());
+</script>
+</html>

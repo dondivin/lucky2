@@ -1,0 +1,180 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "poppin";
+}
+
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff3c00;
+}
+
+@media only screen and (min-width:400px){
+    .login{
+        width: 400px;
+        height: auto;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 100%;
+        background-color: aliceblue;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.226);
+    }
+    .login .input h1{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #ff3c00;
+        font-weight: bolder;
+        font-size: large;
+    }
+    .login .input input{
+        width: 80%;
+        height: 50px;
+        font-size: 20px;
+       text-align: center;
+       border-radius: 10px;
+       font-weight: 900;
+       border: none;
+       box-shadow: 0 0 10px rgba(0, 0, 0, 0.26);
+       outline-color: #ff3c00;
+    }
+    .login .infoPhp h1{
+        width: 80%;
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ff3c00;
+        color: aliceblue;
+        text-align: center;
+        font-size: large;
+        font-weight: bolder;
+        border-radius: 15px;
+    }
+}
+.login form{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 35% 40% auto;
+}
+.login .logo{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login .logo img{
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+}
+.login .infoPhp{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login .input {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.login .input button{
+    width: 50%;
+    height: 50px;
+    color:white;
+    background-color: #ff3c00;
+    font-weight: bolder;
+    border-radius: 10px;
+    border: none;
+    transition: 0.4s;
+}
+.login .input button:hover{
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+.login .bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.login .bottom p{
+
+}
+.login .bottom a{
+    text-decoration: none;
+    color: #ff3c00;
+    font-weight: bolder;
+}
+@media only screen and (max-width:400px) {
+    .login {
+        width: 80%;
+        height: auto;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 100%;
+        background-color: aliceblue;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.226);
+    }
+    .login .input h1{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #ff3c00;
+        font-weight: bolder;
+        font-size: 90%;
+    }
+    .login .input input{
+        width: 80%;
+        height: 50px;
+        font-size: 90%;
+        text-align: center;
+        border-radius: 10px;
+        font-weight: 900;
+        border: 2px solid #2d2a2a42;
+        /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.26); */
+        outline-color: #ff3c00;
+    }
+    .login .bottom a{
+        text-decoration: none;
+        color: #ff3c00;
+        font-weight: bolder;
+        font-size: 90%;
+    }
+    .login .infoPhp h1{
+        width: 80%;
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ff3c00;
+        color: aliceblue;
+        text-align: center;
+        font-size: small;
+        font-weight: bolder;
+        border-radius: 15px;
+    }
+}
+
+
+

@@ -1,0 +1,23 @@
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button label{
+    color: aliceblue;
+    font-weight: bolder;
+    
+}
+button #wait{
+    width: 35px;
+    animation: wait 2s linear infinite;
+    display: none;
+}
+@keyframes wait {
+    0%{
+       transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+     }
+}
